@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <meta name="description" content="You can use this calculator to help you estimate how much your car payment will be.">
+            <meta name="keywords" content="finance, car finance, calculator, finance calculators, budget, savings">
+            <meta name="author" content="Joseph Kessler">
+            <title>Auto Loan Calculator</title>
+            <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+        <header>
+                <div class="container">
+                    <div id="branding">
+                        <h1><span class="highlight">Budget</span> Calculators</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                    <a href="#" class="dropbtn">Budgeting</a>
+                                    <div class="dropdown-content">
+                                            <a href="50-30-20-rule.html">50/30/20 Rule</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropbtn">Auto Budgeting</a>
+                                    <div class="dropdown-content">
+                                        <a href="20-4-10-rule.html">20/4/10 Rule</a>
+                                        <a href="auto-loan-calculator.html">Auto Loan Calculator</a>
+                                    </div>
+                                </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+            </header>
+
+        <div id="pagetitle" class="container">
+                <h1>Auto Loan Calculator</h1>
+        </div>
+
+
+
+        <section class="main">
+            <div class="container">
+                <div>
+                        <p>
+                            If you're in the market for a new or used vehicle, you can use this calculator to help you estimate how much your car payment will be. Not all fields are mandatory, but you should at least have the price of the car, an estimated loan term in months, and an estimated interest rate. Once you've filled out the top part of the form, press submit and it will do the work for you. It will give you the <strong>Loan Amount</strong>, which is how much the loan will be for. The <strong>Interest Paid</strong>, which is how much interest you'll pay over the life of the loan. The <strong>Total Cost</strong>, which is the loan amount plus the interest paid. That's how much money you will have spent if you make payments for the whole life of the loan. Lastly, it will provide you with your estimated <strong>Car Payment</strong>. Your actual payment could be different depending on the other factors such as tax & fees, negative equity, or if you purchase any additonal services. 
+                        </p>
+                        <p>
+                            <strong>Car Price</strong> is the cost of the car before any taxes or fees have been applied. If you plan on trading in your car, then you can fill in the <strong>Trade In</strong> field. Also, if you owe any money on your current car, you can put that in the <strong>Owed On Current Car</strong> field. Note that if you don't put in a trade in value, and only put in the amount you owe on your current car, that amount will get added to the price of the car. 
+                        </p>
+                </div>
+                    <section id="autoloancalculator">
+                        <div>
+                            <form>
+                                <div class="fields">
+                                    <label class="al-label">Car Price ($)</label>
+                                    <input type="text" placeholder="Mandatory" class="al-user-fields" id="price">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Tax & Fees ($)</label>
+                                    <input type="text" placeholder="Optional" class="al-user-fields" id="tax-fees">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Down Payment ($)</label>
+                                    <input type="text" placeholder="Optional" class="al-user-fields" id="down-payment">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Trade In ($)</label>
+                                    <input type="text" placeholder="Optional" class="al-user-fields" id="trade-in">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Owed On Current Car ($)</label>
+                                    <input type="text" placeholder="Optional" class="al-user-fields" id="owed">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Interest Rate (%)</label>
+                                    <input type="text" placeholder="Mandatory" class="al-user-fields" id="interest">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Loan Term (Months)</label>
+                                    <input type="text" placeholder="Mandatory" class="al-user-fields" id="term">
+                                </div>
+                                <button type="button" class="button_1" id="tftsubmit" onclick="alSubmit()">Submit</button>
+                            </form>
+                                <div class="fields">
+                                    <label class="al-label">Loan Amount</label>
+                                    <input readonly type="text" placeholder="0" class="al-user-fields" id="amount">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Interest Paid</label>
+                                    <input readonly type="text" placeholder="0" class="al-user-fields" id="interest-paid">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Total Cost</label>
+                                    <input readonly type="text" placeholder="0" class="al-user-fields" id="total-cost">
+                                </div>
+                                <div class="fields">
+                                    <label class="al-label">Car Payment</label>
+                                    <input readonly type="text" placeholder="0" class="al-user-fields" id="payment">
+                                </div>
+                        </div>
+                    </section> 
+            </div>
+        </section>
+
+        <footer class="al-footer">
+            <p>Budget Calculations. Copyright &copy; 2019</p>
+        </footer>
+
+        <script src="./scripts/auto-loan-calc.js"></script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="The 20/4/10 rule can be used to help you budget your finances when it comes to financing a car. Use this calculator to figure out how it applies to you. ">
+        <meta name="keywords" content="finance, car finance, calculator, finance calculators, budget, savings, 20/4/10 rule, car financing, car budgeting, interest rate, down payment">
+        <meta name="author" content="Joseph Kessler">
+        <title>20/4/10 Rule Calcuator</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Budget</span> Calculators</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                                <a href="#" class="dropbtn">Budgeting</a>
+                                <div class="dropdown-content">
+                                        <a href="50-30-20-rule.html">50/30/20 Rule</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn">Auto Budgeting</a>
+                                <div class="dropdown-content">
+                                    <a href="20-4-10-rule.html">20/4/10 Rule</a>
+                                    <a href="auto-loan-calculator.html">Auto Loan Calculator</a>
+                                </div>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="pagetitle" class="container">
+            <h1>20/4/10 Rule</h1>
+        </div>
+
+        <section class="main">
+            <div class="container">
+                <div class="pagetext">
+                    <p>
+                        The 20/4/10 rule is to be used when you're looking to finance a car. The rule states that you should spend at least <strong>20%</strong> of the price of the car on the down payment, don't get a loan that last longer than <strong>4</strong> years, and the total amount of money you spend per month on car related expenses should be no more than <strong>10%</strong> of your gross monthly income. It's important to note that car related expenses will include things such as car insurance, and the car payment. I don't like to include gas, because it can be hard to estiamte how much you'll be spending on gas.
+                        
+                        <br><br>Once again, I've gone ahead and made a calculator that can do the math for you. All you need to do is pass it your gross monthly, an estimated price for car insurance, and estimated interest rate for the loan. The car insurance part is important, because if it deems that you should spend $400 on your total monthly car related expenses, that will include the car payment and insurance. If your insurance is $100 a month, then that leaves you with $300 a month for the car payment. The calculator will take your income, and use the 10% to find what you should spend on monthly car expenses. Then it will take that and the car insurance to figure out what you should be spending on a car payment. After it has figured that out, it will tell you the price you can afford for a car, and the down payment you should make to get that estimated monthly payment. If you're interested in making your own Excel sheet that can do the same, and more, please take a look at this eBook I've created <a target="_blank" href="https://www.amazon.com/dp/B07RCYJ8ZW">here</a>.
+                    </p>
+                    <p id="explanation" class="hidden-dark">
+                        
+                    </p>
+                </div>
+                <section id="tftcalc">
+                    <div>
+                        <h1 id="calculatortitle">Calculator</h1>
+                        <form id="tftform">
+                            <input type="text" placeholder="Monthly Income" id="tftincome" class="userFields">
+                            <input type="text" placeholder="Estimated Car Insurance" id="tftinsurance" class="userFields">
+                            <input type="text" placeholder="Estimated Interest Rate" id="tftinterest" class="userFields">
+                            <button type="button" class="button_1" id="tftsubmit" onclick="tftSubmit()">Submit</button>
+                            <div class="fields">
+                                <label class="label">Monthly Expenses</label>
+                                <input readonly type="text" placeholder="0" id="tftexpenses" class="roField">  
+                            </div>
+                            <div class="fields">
+                                <label class="label">Car Payment</label>
+                                <input readonly type="text" placeholder="0" id="tftpayment" class="roField">  
+                            </div>
+                            <div class="fields">
+                                <label class="label">Car Price</label>
+                                <input readonly type="text" placeholder="0" id="tftprice" class="roField">  
+                            </div>
+                            <div class="fields">
+                                <label class="label">Down Payment</label>
+                                <input readonly type="text" placeholder="0" id="tftdownpayment" class="roField">  
+                            </div>
+                        </form>
+                    </div>
+                </section> 
+            </div>
+            
+        </section>
+
+
+       
+
+        <footer class="calculatorfooter">
+            <p>Budget Calculations. Copyright &copy; 2019</p>
+        </footer>
+    
+        <script src="./scripts/tft.js"></script>
+
+    </body>
+</html>

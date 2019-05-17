@@ -1,0 +1,318 @@
+body{
+    font: 15px/1.5 Segoe UI;
+    padding: 0;
+    margin: 0;
+    background-color:#f4f4f4;
+    
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button_1{
+    height: 38px;
+    background: #2b6be4;
+    color: white;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main{
+    margin-top: 20px;
+}
+
+.main .pagetext {
+    width: 60%;
+    display: inline-block;
+}
+
+.main .pagetext a{
+    font-weight: bold;
+    color: #2b6be4;
+}
+
+/* Header */
+header{
+    background: #040a16;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #2b6be4 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav ul li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav ul li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+}
+
+header nav ul li a:hover, .dropdown:hover .dropbtn {
+    color: #2b6be4;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2b6be4;
+}
+
+.dropdown-content a{
+    display: block;
+    text-align: left;
+    padding: 15px;;
+}
+
+.dropdown-content a:hover {
+    color: #040a16;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header #branding{
+    float: left;
+    display: block;
+
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+.highlight {
+    color: #2b6be4;
+}
+
+/*Showcase*/
+#showcase{
+    min-height: 500px;
+    background:url('../img/showcase-background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Page Title */
+#pagetitle {
+    text-align: center;
+    background-color: #040a16;
+    color: white;
+    width: 100%;
+}
+
+/* Index */
+
+#home-welcome p a{
+    color: #2b6be4;
+}
+
+/* FTT Calculator */
+
+#calculator {
+    padding: 20px 20px 40px 20px;
+    color: white;
+    background: #040a16;
+    margin: auto;
+    display: table;
+    float: right;
+    width: auto;
+}
+
+#calculatortitle {
+    text-align: center;
+}
+
+#fttincome{
+    padding: 5px;
+    height: 25px;
+}
+
+.formtext{
+    text-align: center;
+    font-weight: bold;
+}
+
+#calculator input[type="text"]{
+    padding: 5px;
+    height: 25px;
+    text-align: center;
+}
+
+.fttpercentage{
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+}
+
+.fttoutputcontainer{
+    text-align: center;
+}
+
+.fttoutputs{
+    display: inline-block;
+}
+
+/* TFT Calculator */
+
+#tftcalc{
+    padding: 20px 20px 40px 20px;
+    color: white;
+    background: #040a16;
+    margin: auto;
+    float: right;
+    width: auto;
+    display: table;
+}
+
+.userFields{
+    margin: auto;
+    padding: 5px;
+    height: 25px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    width: 250px;
+}
+
+#tftsubmit{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.fields {
+    margin-top: 20px;
+}
+
+.label{
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.roField{
+    margin-left: 20px;
+    float: right;
+    padding: 5px;
+    height: 25px;
+    text-align: center;
+}
+
+.hidden-dark {
+    color: white;
+    padding: 20px;
+}
+
+.dark {
+    background: #040a16;
+    color: white;
+    padding: 40px;
+}
+
+/* Auto Loan Calculator */
+
+#autoloancalculator {
+    padding: 20px 20px 40px 20px;
+    color: white;
+    background: #040a16;
+    margin: auto;
+    width: auto;
+    display: table;
+}
+
+.al-user-fields{
+    margin: auto;
+    margin-left: 10px;
+    padding: 5px;
+    height: 25px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100px;
+    float: right;
+}
+
+.al-label {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 14px;
+}
+
+
+/* Footer */
+
+.calculatorfooter{
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #2b6be4;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.homefooter{
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #2b6be4;
+    color: white;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.al-footer {
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #2b6be4;
+    color: white;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Adjust styles depending on screen size */
+@media(max-width:1250px){
+    .main .container .pagetext {
+        width: 100%;
+    }
+
+    #calculator, #tftcalc{
+        float: none;
+    }
+
+    /* Puts footer below everything when window changes size */
+    .calculatorfooter {
+        position: relative;
+    }
+}

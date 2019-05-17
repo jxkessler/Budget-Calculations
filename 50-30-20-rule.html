@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="The 50/30/20 rule can be used to help create your budget. Use this calculator to see how it applies to you. ">
+        <meta name="keywords" content="finance, car finance, calculator, finance calculators, budget, savings">
+        <meta name="author" content="Joseph Kessler">
+        <title>50/30/20 Rule Calculator</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Budget</span> Calculators</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                                <a href="#" class="dropbtn">Budgeting</a>
+                                <div class="dropdown-content">
+                                        <a href="50-30-20-rule.html">50/30/20 Rule</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn">Auto Budgeting</a>
+                                <div class="dropdown-content">
+                                    <a href="20-4-10-rule.html">20/4/10 Rule</a>
+                                    <a href="auto-loan-calculator.html">Auto Loan Calculator</a>
+                                </div>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="pagetitle" class="container">
+            <h1>50/30/20 Rule</h1>
+        </div>
+
+        <section class="main">
+            <div class="container">
+                <div class="pagetext">
+                    <p>
+                        The 50/30/20 rule can be applied to your budget, and is pretty easy to understand. All it means is that you should spend no more than <strong>50%</strong> of your income on needs, <strong>30%</strong> on wants, and <strong>20%</strong> on savings. The important part is to understand what should be considered a need or a want. Your needs will most likly include your monthly bills, and groceries. It's things that you can't really live without. Your wants are the opposite. They're things that you like to have, but don't really need. This will include payments towards Netflix, Hulu, Amazon Prime, and things of that sort. Lastly, savings will be the easy one. It's money that goes towards a savings account.
+
+                        <br><br>To make things a little bit easier, there's a calculator below that you can use to do the math for you. All you need to do is enter your monthly income, and press Submit. It will do the math, and display the values in the fields below. I have also created an eBook that walks you through setting an up Excel sheet to do the same thing. It goes a little more in depth though, and allows you to enter in all of your bills, puts them into organized tables, and gives you the ability to adjust the percentages. It will walk you through the process step by step. If you're interested in doing that, you can find the eBook <a target="_blank" href="https://www.amazon.com/dp/B07QQ3TR1L">here</a>. 
+                    </p>
+                </div>
+                <section id="calculator">
+                    <div>
+                        <h1 id="calculatortitle">Calculator</h1>
+                        <form name="fttCalculator">
+                            <input type="text" placeholder="Monthly Income" id=fttincome>
+                            <button type="button" class="button_1" id="fttsubmit" onclick="fttSubmit()">Submit</button>
+                            <h1 class="formtext">Needs</h1>
+                            <div class="fttoutputcontainer">
+                                <div class="fttoutputs">
+                                    <input readonly type="text" placeholder="0" id="fttneeds">
+                                    <input type="text" id="fttneedspercentage" class="fttpercentage" value="50%" readonly>
+                                </div>
+                            </div>
+                            <h1 class="formtext">Wants</h1>
+                            <div class="fttoutputcontainer">
+                                <div class="fttoutputs">
+                                    <input readonly type="text" placeholder="0" id="fttwants">
+                                    <input type="text" id="fttwantspercentage" class="fttpercentage" value="30%" readonly>
+                                </div>
+                            </div>
+                            <h1 class="formtext">Savings</h1>
+                            <div class="fttoutputcontainer">
+                                <div class="fttoutputs">
+                                    <input readonly type="text" placeholder="0" id="fttsavings">
+                                    <input type="text" id="fttsavingspercentage" class="fttpercentage" value="20%" readonly>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section> 
+            </div>
+            
+        </section>
+
+
+       
+
+        <footer class="calculatorfooter">
+            <p>Budget Calculations. Copyright &copy; 2019</p>
+        </footer>
+    
+        <script src="./scripts/ftt.js"></script>
+
+    </body>
+</html>
